@@ -1,0 +1,357 @@
+{
+ "passed": 70,
+ "total": 70,
+ "results": [
+  {
+   "test": "boot: title screen without JS errors",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "test": "chapter 1: intro -> play state",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "chapter 1: still completable (bot reaches the exit, completion screen)",
+   "pass": true,
+   "detail": "{\"star\":7,\"heart\":3,\"plane\":3}"
+  },
+  {
+   "test": "chapter 1: collectibles counted",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "chapter 1: save migrated into SaveSystem (ch1.done)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "chapter 1 -> chapter 2 transition (card)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "chapter 2 starts with the growth cutscene",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "artist: station in hub opens mini-game select",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "artist: level 2 and 3 locked at start",
+   "pass": true,
+   "detail": "[False, False]"
+  },
+  {
+   "test": "artist: level 1 starts from card click",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "artist: pressing Done on an empty picture does not finish",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "artist: brush paints cells by dragging",
+   "pass": true,
+   "detail": "16"
+  },
+  {
+   "test": "artist: brush size changes",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "artist: eraser removes paint",
+   "pass": true,
+   "detail": "16 -> 0"
+  },
+  {
+   "test": "artist: undo restores the erased paint",
+   "pass": true,
+   "detail": "0 -> 16"
+  },
+  {
+   "test": "artist: clear removes everything",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "test": "artist: undo after clear brings paint back",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "artist L1: fill tool colours whole regions",
+   "pass": true,
+   "detail": "1"
+  },
+  {
+   "test": "artist L1: completion evaluated (3 stars with 3+ colours)",
+   "pass": true,
+   "detail": "{'stars': 3, 'score': 1000, 'gains': {'creativity': 22, 'language': 0, 'friendship': 0}, 'badges': ['first_brush'], 'rewards': []}"
+  },
+  {
+   "test": "artist L1: creativity gain recorded",
+   "pass": true,
+   "detail": "{'creativity': 22, 'language': 0, 'friendship': 0}"
+  },
+  {
+   "test": "artist L1: first-clear badge",
+   "pass": true,
+   "detail": "['first_brush']"
+  },
+  {
+   "test": "artist: retry restarts the level",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "artist: replaying does not farm stats",
+   "pass": true,
+   "detail": "{'creativity': 0, 'language': 0, 'friendship': 0}"
+  },
+  {
+   "test": "artist: level 2 unlocked, Next opens it",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "artist L2: wrong colours are NOT accepted (still playing + hint blink)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "artist L2: copying the reference gives 100% accuracy",
+   "pass": true,
+   "detail": "1"
+  },
+  {
+   "test": "artist L2: 3 stars",
+   "pass": true,
+   "detail": "{'stars': 3, 'score': 1000, 'gains': {'creativity': 20, 'language': 0, 'friendship': 0}, 'badges': [], 'rewards': ['palette_plus']}"
+  },
+  {
+   "test": "artist L2: reward \"Extra Colors\" unlocked",
+   "pass": true,
+   "detail": "['palette_plus']"
+  },
+  {
+   "test": "artist L3: opens with 12 colours after reward",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "artist L3 (exact, 15 regions): 3 stars",
+   "pass": true,
+   "detail": "{'stars': 3, 'score': 1000, 'gains': {'creativity': 24, 'language': 0, 'friendship': 0}, 'badges': ['colorful', 'true_colors'], 'rewards': ['sparkle_trail']}"
+  },
+  {
+   "test": "artist: badges colorful + true_colors",
+   "pass": true,
+   "detail": "['colorful', 'true_colors']"
+  },
+  {
+   "test": "artist: result -> level select (stars saved)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "artist: Back returns to the hub",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "language: station opens select",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "language: level 1 starts",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "language L1: wrong pair counts a mistake",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "language L1: matching finished with feedback + stars",
+   "pass": true,
+   "detail": "{'stars': 3, 'score': 550, 'gains': {'creativity': 0, 'language': 16, 'friendship': 0}, 'badges': ['first_words'], 'rewards': []}"
+  },
+  {
+   "test": "language L1: language stat increased",
+   "pass": true,
+   "detail": "{'creativity': 0, 'language': 16, 'friendship': 0}"
+  },
+  {
+   "test": "language L2 unlocked",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "language L2: wrong category counts a mistake",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "language L2: sorting round completes and sentence round starts",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "language L2: sentence ordering finished with result",
+   "pass": true,
+   "detail": "{'stars': 3, 'score': 740, 'gains': {'creativity': 0, 'language': 20, 'friendship': 0}, 'badges': [], 'rewards': ['hint_lens']}"
+  },
+  {
+   "test": "language L3 (detective) starts",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "language L3: wrong answer gives feedback (mistake counted, option disabled)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "language L3: 8 cases answered, result shown",
+   "pass": true,
+   "detail": "{'types': ['listen', 'meaning', 'pic', 'unscramble'], 'result': {'stars': 3, 'score': 750, 'gains': {'creativity': 0, 'language': 24, 'friendship': 0}, 'badges': ['polyglot', 'word_detective', 'all_rounder'], 'rewards': []}}"
+  },
+  {
+   "test": "language L3: question types mix (>=3 kinds)",
+   "pass": true,
+   "detail": "['listen', 'meaning', 'pic', 'unscramble']"
+  },
+  {
+   "test": "language: badges first_words + polyglot",
+   "pass": true,
+   "detail": "['polyglot', 'word_detective', 'all_rounder']"
+  },
+  {
+   "test": "language: reward \"Hint Lens\" unlocked earlier",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "language: Hint (reward) removes two wrong options",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "test": "language: speech support detected without crashing (Speech.ok)",
+   "pass": true,
+   "detail": "speechSynthesis supported=True"
+  },
+  {
+   "test": "friends: station opens select",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "friends L1 starts",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "friends L1: two NPCs with different personalities",
+   "pass": true,
+   "detail": "['energetic', 'shy']"
+  },
+  {
+   "test": "friends L1: NPCs are animated/idle with a state",
+   "pass": true,
+   "detail": "['idle', 'idle']"
+  },
+  {
+   "test": "friends: energetic NPC ignores you until you hop near it (condition)",
+   "pass": true,
+   "detail": "0"
+  },
+  {
+   "test": "friends: shy NPC retreats when you rush at it",
+   "pass": true,
+   "detail": "retreat"
+  },
+  {
+   "test": "friends L1: befriend energetic NPC (hop to get attention, then the matching action)",
+   "pass": true,
+   "detail": "100"
+  },
+  {
+   "test": "friends L1: befriend shy NPC (stand still, then the matching action)",
+   "pass": true,
+   "detail": "100"
+  },
+  {
+   "test": "friends L1: Friendship Progress reaches the goal, level completes",
+   "pass": true,
+   "detail": "{'stars': 3, 'score': 1000, 'gains': {'creativity': 0, 'language': 0, 'friendship': 16}, 'badges': ['hello_friend'], 'rewards': []}"
+  },
+  {
+   "test": "friends L1: friendship stat increased",
+   "pass": true,
+   "detail": "{'creativity': 0, 'language': 0, 'friendship': 16}"
+  },
+  {
+   "test": "friends: badge Hello, Friend",
+   "pass": true,
+   "detail": "['hello_friend']"
+  },
+  {
+   "test": "friends L2 starts (unlocked)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "friends L2: standing on a plate opens the gate, leaving closes it again",
+   "pass": true,
+   "detail": "(True, False)"
+  },
+  {
+   "test": "friends L2: closed gate blocks the player",
+   "pass": true,
+   "detail": "564"
+  },
+  {
+   "test": "friends L2: befriended (friendship>=60, enough for Wait)",
+   "pass": true,
+   "detail": "68"
+  },
+  {
+   "test": "friends L2: Follow command obeyed (NPC state follow)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "friends L2: NPC follows you onto the pressure plate",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "friends L2: Wait command obeyed",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "friends L2: NPC holds the plate, gate stays open, you reach the exit",
+   "pass": true,
+   "detail": "{'stars': 3, 'score': 1000, 'gains': {'creativity': 0, 'language': 0, 'friendship': 20}, 'badges': ['team_player'], 'rewards': ['friendly_aura']}"
+  },
+  {
+   "test": "no JavaScript errors / failed requests during all stages",
+   "pass": true,
+   "detail": "[]"
+  }
+ ],
+ "errors": []
+}

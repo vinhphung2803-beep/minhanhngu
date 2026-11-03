@@ -1,0 +1,57 @@
+{
+ "passed": 10,
+ "total": 10,
+ "results": [
+  {
+   "test": "friends L3: station -> select, level 3 unlocked by clearing level 2",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "friends L3 starts",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "friends L3: three NPC types",
+   "pass": true,
+   "detail": "['energetic', 'shy', 'calm']"
+  },
+  {
+   "test": "friends L3: shy NPC befriended",
+   "pass": true,
+   "detail": "86"
+  },
+  {
+   "test": "friends L3: shy NPC follows to the second plate",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "friends L3: second gate open thanks to the shy friend",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "friends L3: calm NPC befriended (rests between talks)",
+   "pass": true,
+   "detail": "86"
+  },
+  {
+   "test": "friends L3: group challenge completed (3 NPCs, 2 gates, calm friend at exit)",
+   "pass": true,
+   "detail": "{'stars': 3, 'score': 1000, 'gains': {'creativity': 0, 'language': 0, 'friendship': 24}, 'badges': ['best_buddies'], 'rewards': []}"
+  },
+  {
+   "test": "friends: badges team_player + best_buddies",
+   "pass": true,
+   "detail": "['best_buddies']"
+  },
+  {
+   "test": "no JavaScript errors / failed requests during all stages",
+   "pass": true,
+   "detail": "[]"
+  }
+ ],
+ "errors": []
+}

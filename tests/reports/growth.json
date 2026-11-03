@@ -1,0 +1,187 @@
+{
+ "passed": 36,
+ "total": 36,
+ "results": [
+  {
+   "test": "growth: player input is paused during the evolution cutscene",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "growth: cutscene can be skipped to the flash",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "growth: control returned after the cutscene",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "growth: player can move again",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "growth: baby -> child saved + hitbox changed separately from sprite",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "growth/child: sprite sheet is 11 frames of 32x32",
+   "pass": true,
+   "detail": "352x32"
+  },
+  {
+   "test": "growth/child: identity kept (gold star clip + black hair + mint outfit)",
+   "pass": true,
+   "detail": "gold=9 hair=132 mint=18"
+  },
+  {
+   "test": "growth/child: animation frames are genuinely different images",
+   "pass": true,
+   "detail": "383"
+  },
+  {
+   "test": "growth/preteen: sprite sheet is 11 frames of 32x32",
+   "pass": true,
+   "detail": "352x32"
+  },
+  {
+   "test": "growth/preteen: identity kept (gold star clip + black hair + mint outfit)",
+   "pass": true,
+   "detail": "gold=9 hair=122 mint=27"
+  },
+  {
+   "test": "growth/preteen: animation frames are genuinely different images",
+   "pass": true,
+   "detail": "383"
+  },
+  {
+   "test": "growth/teen: sprite sheet is 11 frames of 32x32",
+   "pass": true,
+   "detail": "352x32"
+  },
+  {
+   "test": "growth/teen: identity kept (gold star clip + black hair + mint outfit)",
+   "pass": true,
+   "detail": "gold=5 hair=123 mint=61"
+  },
+  {
+   "test": "growth/teen: animation frames are genuinely different images",
+   "pass": true,
+   "detail": "347"
+  },
+  {
+   "test": "growth/young: sprite sheet is 11 frames of 32x32",
+   "pass": true,
+   "detail": "352x32"
+  },
+  {
+   "test": "growth/young: identity kept (gold star clip + black hair + mint outfit)",
+   "pass": true,
+   "detail": "gold=6 hair=133 mint=56"
+  },
+  {
+   "test": "growth/young: animation frames are genuinely different images",
+   "pass": true,
+   "detail": "474"
+  },
+  {
+   "test": "growth: body height increases with age (child<preteen<teen<=young)",
+   "pass": true,
+   "detail": "[25, 29, 31, 32]"
+  },
+  {
+   "test": "animation/baby: idle -> run -> hop(jump) -> hop(fall) -> land/idle",
+   "pass": true,
+   "detail": "['idle_crawl', 'crawl', 'hop', 'hop', 'idle_crawl']"
+  },
+  {
+   "test": "animation/baby: time-based (60Hz and 20Hz give same frame)",
+   "pass": true,
+   "detail": "2"
+  },
+  {
+   "test": "animation/child: idle -> run -> hop(jump) -> hop(fall) -> land/idle",
+   "pass": true,
+   "detail": "['idle', 'run', 'hop', 'hop', 'idle']"
+  },
+  {
+   "test": "animation/child: time-based (60Hz and 20Hz give same frame)",
+   "pass": true,
+   "detail": "3"
+  },
+  {
+   "test": "animation/preteen: idle -> run -> hop(jump) -> hop(fall) -> land/idle",
+   "pass": true,
+   "detail": "['idle', 'run', 'hop', 'hop', 'idle']"
+  },
+  {
+   "test": "animation/preteen: time-based (60Hz and 20Hz give same frame)",
+   "pass": true,
+   "detail": "3"
+  },
+  {
+   "test": "animation/teen: idle -> run -> hop(jump) -> hop(fall) -> land/idle",
+   "pass": true,
+   "detail": "['idle', 'run', 'hop', 'hop', 'idle']"
+  },
+  {
+   "test": "animation/teen: time-based (60Hz and 20Hz give same frame)",
+   "pass": true,
+   "detail": "3"
+  },
+  {
+   "test": "animation/young: idle -> run -> hop(jump) -> hop(fall) -> land/idle",
+   "pass": true,
+   "detail": "['idle', 'run', 'hop', 'hop', 'idle']"
+  },
+  {
+   "test": "animation/young: time-based (60Hz and 20Hz give same frame)",
+   "pass": true,
+   "detail": "3"
+  },
+  {
+   "test": "growth: evolve to preteen (cutscene, sheet, hitbox 24, control returned)",
+   "pass": true,
+   "detail": "['preteen', 12, 24, 'preteen', 'hub']"
+  },
+  {
+   "test": "growth/preteen: feet stay on the ground after the change (no sinking/floating)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "growth: evolve to teen (cutscene, sheet, hitbox 27, control returned)",
+   "pass": true,
+   "detail": "['teen', 12, 27, 'teen', 'hub']"
+  },
+  {
+   "test": "growth/teen: feet stay on the ground after the change (no sinking/floating)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "growth: evolve to young (cutscene, sheet, hitbox 28, control returned)",
+   "pass": true,
+   "detail": "['young', 12, 28, 'young', 'hub']"
+  },
+  {
+   "test": "growth/young: feet stay on the ground after the change (no sinking/floating)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "growth: CharacterGrowth.evolve is generic (next stage helper)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "test": "no JavaScript errors / failed requests during all stages",
+   "pass": true,
+   "detail": "[]"
+  }
+ ],
+ "errors": []
+}

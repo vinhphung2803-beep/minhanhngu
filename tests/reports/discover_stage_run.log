@@ -1,0 +1,21 @@
+=== stage discover
+PASS progression: saved stats loaded from earlier stages  -> [{'creativity': 66, 'language': 60, 'friendship': 60}, True, 9, 'preteen']
+PASS progression: growth milestone applied when returning to the hub (preteen)  -> preteen
+PASS progression: 4+ levels cleared -> evolves to preteen after leaving a mini-game  -> preteen
+PASS progression: Discover Yourself unlocked by stats (creativity/language/friendship >= 30)  -> {"creativity":66,"language":60,"friendship":60}
+PASS discover: station is locked while a stat is below the requirement
+PASS discover: station opens when requirements are met
+PASS discover: select shows phase progress (1/4)
+PASS discover phase 1: painting (match the sunset)
+PASS discover: phase 1 clear + checkpoint saved
+PASS discover: leaving keeps the checkpoint
+PASS discover: resumes at phase 2 (language)
+PASS discover phase 2: language challenge cleared
+PASS discover phase 3: social room with a shy NPC
+PASS discover phase 3: befriend the shy NPC  -> 86
+FAIL discover phase 3: cleared (gate opened with the NPC holding the plate)
+FAIL discover phase 4: free painting ("self portrait")
+FAIL stage discover crashed  -> Error("Page.evaluate: TypeError: Cannot read properties of undefined (reading 'forEach')\n    at eval (eval at evaluate (:290:30), <anonymous>:1:43)\n    at eval (eval at evaluate (:290:30), <anonymous>:2:187)\n    at eval (<anonymous>)\n    at UtilityScript.evaluate (<anonymous>:290:30)\n    at Uti
+PASS no JavaScript errors / failed requests during all stages  -> []
+
+SUMMARY 15/18 passed

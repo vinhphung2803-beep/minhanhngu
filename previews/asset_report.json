@@ -1,0 +1,32 @@
+[
+    {
+        "filename": "baby_idle_crawl.png",
+        "format": "PNG",
+        "width": 32,
+        "height": 32,
+        "mode": "RGBA",
+        "has_transparency": true,
+        "file_size_kb": 1.97,
+        "valid": true
+    },
+    {
+        "filename": "baby_idle_crawl_preview.png",
+        "format": "PNG",
+        "width": 512,
+        "height": 512,
+        "mode": "RGBA",
+        "has_transparency": true,
+        "file_size_kb": 5.42,
+        "valid": true
+    },
+    {
+        "filename": "baby_idle_crawl_source.png",
+        "format": "PNG",
+        "width": 1008,
+        "height": 957,
+        "mode": "RGBA",
+        "has_transparency": true,
+        "file_size_kb": 772.94,
+        "valid": true
+    }
+]
