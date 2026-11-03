@@ -1,0 +1,17 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #14121f;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+canvas {
+  /* Giữ pixel sắc nét khi phóng to */
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: #CDE8F6;
+}

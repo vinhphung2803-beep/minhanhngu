@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #2b2250;
+  overflow: hidden;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+canvas {
+  /* keep pixels sharp when scaled */
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: #CDE8F6;
+}
+
+/* Touch controls: hidden unless the device has a touchscreen */
+#touch { display: none; }
+@media (pointer: coarse) {
+  #touch {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    pointer-events: none;
+  }
+  #touch .pad { display: flex; gap: 12px; }
+  #touch button {
+    pointer-events: auto;
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    border: 3px solid #3a2a4d;
+    background: rgba(255, 244, 230, 0.75);
+    color: #3a2a4d;
+    font: bold 20px monospace;
+    touch-action: none;
+  }
+  #touch button.big { width: 84px; background: rgba(255, 140, 180, 0.8); }
+  #touch button.down { background: #ffd65a; }
+}
